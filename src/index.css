@@ -219,6 +219,7 @@ button:disabled {
 @media screen and (max-width: 475px) {
     body {
         background-image: url("./assets/bg-intro-mobile.png");
+        height: 100vh;
         overflow: hidden;
     }
     #overall {
@@ -226,7 +227,7 @@ button:disabled {
         overflow: hidden;
         gap: 4rem;
         width: 23rem;
-        height: 37rem;
+        height: 100vh;
     }
     #left {
         width: 100%;
