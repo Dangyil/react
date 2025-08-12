@@ -60,8 +60,25 @@ export default function ValidationForm() {
       default:
         break;
     }
-    setErrors(prev => ({ ...prev, [name]: message }));
+    
     return message;
+  };
+
+  // Full form validation function
+  const validate = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    for (let field of fields) {
+      const message = validateField(field.name, formData[field.name]);
+      if (message) {
+        tempErrors[field.name] = message;
+        isValid = false;
+      }
+    }
+
+    setErrors(tempErrors);
+    return isValid;
   };
 
   // Handle form field changes
@@ -86,7 +103,8 @@ export default function ValidationForm() {
   // Form submission effect
   useEffect(() => {
     const hasErrors = Object.values(errors).some(error => error);
-    setIsDisabled(hasErrors);
+    const hasEmptyFields = fields.some(field => !formData[field.name].trim());
+    setIsDisabled(hasErrors || hasEmptyFields);
   }, [formData, errors]);
 
   return (
