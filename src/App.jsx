@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from 'react' // React hooks for state and side effects
 import { useEffect } from 'react'
 import './index.css'
 import './App.css'
 
 // ValidationForm component
 export default function ValidationForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({ // state for form input values
     firstName: "",
     lastName: "",
     email: "",
@@ -61,41 +61,42 @@ export default function ValidationForm() {
         break;
     }
     
-    return message;
+    return message; // return the error message (or empty string if valid)
   };
 
   // Full form validation function
   const validate = () => {
-    let tempErrors = {};
-    let isValid = true;
+    let tempErrors = {}; // object to store all errors
+    let isValid = true; // flag to track overall validity
 
+    // Validate each field
     for (let field of fields) {
       const message = validateField(field.name, formData[field.name]);
-      if (message) {
+      if (message) { // if there is an error
         tempErrors[field.name] = message;
-        isValid = false;
+        isValid = false; // mark form as invalid
       }
     }
 
-    setErrors(tempErrors);
+    setErrors(tempErrors); // save error in state
     return isValid;
   };
 
   // Handle form field changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    setErrors({...errors, [name]: validateField(name, value)});
+    setFormData({ ...formData, [name]: value }); // update the specific field in formData
+    setErrors({...errors, [name]: validateField(name, value)}); // validate only this field and store/update its error
   };
 
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     
-     if (validate()) {
+     if (validate()) { // if form is valid
       alert('Form submitted successfully!');
-      setFormData({ firstName: '', lastName: '', email: '', password: '' });
-      setErrors({});
+      setFormData({ firstName: '', lastName: '', email: '', password: '' }); // clear all inputs
+      setErrors({}); // clear error messages
     }
   };
 
