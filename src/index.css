@@ -248,7 +248,7 @@ button:disabled {
        height: 3rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         width: 80%;
     }
@@ -261,14 +261,14 @@ button:disabled {
     }
     button {
         width: 15.7rem;
-        height: 2.4rem;
+        height: 2.6rem;
         font-size: 0.75rem;
     }
     #see {
         font-size: 0.8rem;
         line-height: 1.2rem;
         text-align: center;
-        width: 95%;
+        width: 97%;
     }
     input {
         padding: 0.7rem;
