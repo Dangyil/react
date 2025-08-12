@@ -275,11 +275,11 @@ button:disabled {
     #terms {
         text-align: center;
         width: 90%;
-        line-height: 15px;
+        line-height: 14px;
     } 
     #try {
         text-align: center;
         width: 50%;
-        line-height: 20px;
+        line-height: 19px;
     }
 }
