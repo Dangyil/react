@@ -216,7 +216,7 @@ button:disabled {
         width: 65%;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     body {
         background-image: url("./assets/bg-intro-mobile.png");
         overflow: hidden;
@@ -224,7 +224,7 @@ button:disabled {
     #overall {
         flex-direction: column;
         overflow: hidden;
-        gap: 2rem;
+        gap: 4rem;
         width: 23rem;
         height: 37rem;
     }
@@ -239,11 +239,11 @@ button:disabled {
         gap: 0.9rem;
     }
     #myForm {
-       width: 15rem;
-       height: 20rem;
+       width: 17rem;
+       height: 21rem;
     }
     #purple-box {
-       width: 18.8rem;
+       width: 21rem;
        height: 3rem;
     }
     h1 {
