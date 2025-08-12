@@ -75,13 +75,7 @@ export default function ValidationForm() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    let newErrors = {};
-    fields.forEach((field) => {
-      newErrors[field.name] = validateField(field.name, formData[field.name]);
-    });
-
-    setErrors(newErrors);
-
+    
      if (validate()) {
       alert('Form submitted successfully!');
       setFormData({ firstName: '', lastName: '', email: '', password: '' });
