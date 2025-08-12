@@ -66,19 +66,19 @@ export default function ValidationForm() {
 
   // Full form validation function
   const validate = () => {
-    let tempErrors = {}; // object to store all errors
+    let objErrors = {}; // object to store all errors
     let isValid = true; // flag to track overall validity
 
     // Validate each field
     for (let field of fields) {
       const message = validateField(field.name, formData[field.name]);
       if (message) { // if there is an error
-        tempErrors[field.name] = message;
+        objErrors[field.name] = message;
         isValid = false; // mark form as invalid
       }
     }
 
-    setErrors(tempErrors); // save error in state
+    setErrors(objErrors); // save error in state
     return isValid;
   };
 
