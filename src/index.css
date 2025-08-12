@@ -268,7 +268,7 @@ button:disabled {
         font-size: 0.8rem;
         line-height: 1.2rem;
         text-align: center;
-        width: 97%;
+        width: 100%;
     }
     input {
         padding: 0.7rem;
