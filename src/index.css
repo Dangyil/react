@@ -224,7 +224,6 @@ button:disabled {
     }
     #overall {
         flex-direction: column;
-        overflow: hidden;
         gap: 4rem;
         width: 23rem;
         height: 100vh;
