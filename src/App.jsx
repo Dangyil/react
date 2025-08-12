@@ -85,7 +85,6 @@ export default function ValidationForm() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-
     setErrors({...errors, [name]: validateField(name, value)});
   };
 
@@ -100,11 +99,10 @@ export default function ValidationForm() {
     }
   };
 
-  // Form submission effect
+  // Prevent submission if there are validation errors
   useEffect(() => {
     const hasErrors = Object.values(errors).some(error => error);
-    const hasEmptyFields = fields.some(field => !formData[field.name].trim());
-    setIsDisabled(hasErrors || hasEmptyFields);
+    setIsDisabled(hasErrors);
   }, [formData, errors]);
 
   return (
