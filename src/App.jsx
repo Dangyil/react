@@ -82,7 +82,7 @@ export default function ValidationForm() {
 
     setErrors(newErrors);
 
-     if (Object.keys(newErrors).length === 0) {
+     if (validate()) {
       alert('Form submitted successfully!');
       setFormData({ firstName: '', lastName: '', email: '', password: '' });
       setErrors({});
