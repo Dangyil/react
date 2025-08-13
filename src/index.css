@@ -124,7 +124,7 @@ input.error {
 .error-icon {
   position: absolute;
   right: 1rem;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   background-color: hsl(0, 100%, 74%);
   color: white;
