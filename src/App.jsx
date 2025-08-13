@@ -16,7 +16,7 @@ export default function ValidationForm() {
   const [errors, setErrors] = useState({});
   const [isDisabled, setIsDisabled] = useState(true);
 
-  // Form fields array configuration
+  // Form fields configuration array
   const fields = [
     { name: "firstName", placeholder: "First name" },
     { name: "lastName", placeholder: "Last name" },
