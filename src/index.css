@@ -227,6 +227,7 @@ button:disabled {
         gap: 4rem;
         width: 23rem;
         height: 100vh;
+        overflow: hidden;
     }
     #left {
         width: 100%;
