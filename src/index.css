@@ -230,7 +230,7 @@ button:disabled {
         overflow: hidden;
     }
     #left {
-        width: 100%;
+        width: 90%;
         height: 7rem;
     }
     #right {
@@ -257,7 +257,7 @@ button:disabled {
     }
     input {
         width: 16rem;
-        height: 1rem;
+        height: 1.5rem;
         padding: 0.7rem;
     }
     button {
