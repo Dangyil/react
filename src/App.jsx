@@ -137,7 +137,7 @@ export default function ValidationForm() {
            <span className="error-icon" style={{ display: errors[field.name] ? 'inline-block' : 'none' }}   >
                   !
            </span>
-              </div>
+          </div>
               <span className="error">{errors[field.name]}</span>
         </label>
       ))}
