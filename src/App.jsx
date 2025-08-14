@@ -2,7 +2,6 @@ import { useState } from 'react' // React hooks for state and side effects
 import { useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import './index.css'
-import './App.css'
 
 // ValidationForm component
 export default function ValidationForm() {
