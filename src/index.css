@@ -166,7 +166,6 @@ button:disabled {
     justify-content: center;
     width: fit-content;
     height: 100vh;
-    background-color: hsl(0, 100%, 74%);
     color: white;
 }
 @media screen and (max-width: 1024px){
