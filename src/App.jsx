@@ -149,7 +149,7 @@ export default function ValidationForm() {
             SUBMIT
           </button>
       <p id="terms">
-        By clicking the button, you are agreeing to our
+        By clicking the button, you are agreeing to our{" "}
         <a href="#">Terms and Services</a>
       </p>
     </form>
