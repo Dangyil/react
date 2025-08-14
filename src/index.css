@@ -248,7 +248,7 @@ button:disabled {
        height: 3rem;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         width: 100%;
     }
@@ -278,7 +278,7 @@ button:disabled {
     } 
     #try {
         text-align: center;
-        width: 50%;
+        width: 40%;
         line-height: 19px;
     }
 }
