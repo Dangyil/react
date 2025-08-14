@@ -146,7 +146,7 @@ export default function ValidationForm() {
             type="submit"
             disabled={isDisabled}
             >
-            CLAIM YOUR FREE TRIAL
+            SUBMIT
           </button>
       <p id="terms">
         By clicking the button, you are agreeing to our{" "}
