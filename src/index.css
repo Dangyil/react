@@ -225,7 +225,7 @@ button:disabled {
     #overall {
         flex-direction: column;
         gap: 4rem;
-        width: 23rem;
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
     }
@@ -257,7 +257,7 @@ button:disabled {
     }
     input {
         width: 16rem;
-        height: 2rem;
+        height: 1rem;
         padding: 0.7rem;
     }
     button {
