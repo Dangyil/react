@@ -2,9 +2,11 @@ import { useState } from 'react' // React hooks for state and side effects
 import { useEffect } from 'react'
 import './index.css'
 import './App.css'
+import { useNavigate } from "react-router-dom";
 
 // ValidationForm component
 export default function ValidationForm() {
+  const navigate = useNavigate(); // Hook to navigate between pages
   const [formData, setFormData] = useState({ // state for form input values
     firstName: "",
     lastName: "",
@@ -92,9 +94,8 @@ export default function ValidationForm() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-     if (validate()) { // if form is valid
-      alert('Form submitted successfully!');
+    if (validate()) { // if form is valid
+      navigate("/success"); // navigate to success page
       setFormData({ firstName: '', lastName: '', email: '', password: '' }); // clear all inputs
       setErrors({}); // clear error messages
     }
