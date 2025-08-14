@@ -1,4 +1,4 @@
-import { useState } from 'react' // React hooks for state and side effects
+import { useState } from 'react' // React hooks for state, side effects and Navigation
 import { useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import './index.css'
@@ -149,7 +149,7 @@ export default function ValidationForm() {
             SUBMIT
           </button>
       <p id="terms">
-        By clicking the button, you are agreeing to our{" "}
+        By clicking the button, you are agreeing to our
         <a href="#">Terms and Services</a>
       </p>
     </form>
