@@ -213,7 +213,7 @@ button:disabled {
         text-align: center;
     }
     input {
-        width: 60vw;
+        width: 50vw;
         height: 1rem;
     }
     button {
@@ -224,7 +224,7 @@ button:disabled {
         font-size: 1rem;
         line-height: 1.5rem;
         text-align: center;
-        width: 75%;
+        width: 85%;
     }
 }
 @media screen and (max-width: 475px) {
