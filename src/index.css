@@ -240,6 +240,7 @@ button:disabled {
         width: 90vw;
         align-items: center;
         justify-content: flex-start;
+        padding-top: 1rem;
         gap: 0.9rem;
     }
     #myForm {
