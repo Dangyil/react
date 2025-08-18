@@ -213,18 +213,18 @@ button:disabled {
         text-align: center;
     }
     input {
-        width: 100%;
+        width: 60vw;
         height: 1rem;
     }
     button {
-        width: 90%;
+        width: 98%;
         height: 2.7rem;
     }
     #see {
         font-size: 1rem;
-        line-height: 1.7rem;
+        line-height: 1.5rem;
         text-align: center;
-        width: 65%;
+        width: 75%;
     }
 }
 @media screen and (max-width: 475px) {
