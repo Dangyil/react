@@ -28,8 +28,8 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 29rem;
-    height: 20rem;
+    width: 40vw;
+    height: 100vh;
 }
 #right {
     display: flex;
@@ -38,6 +38,8 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
+    width: 40vw;
+    height: 100vh;
 }
 .input-wrapper {
   position: relative;
