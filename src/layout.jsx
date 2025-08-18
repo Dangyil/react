@@ -1,10 +1,22 @@
 // DashboardLayout.jsx
 import { useState } from "react";
-import "./layout.css";
-import { Home, Bookmark, Users, MessageSquare, Calendar, Menu, X } from "lucide-react";
+import "./DashboardLayout.css";
+import {
+  Home,
+  Bookmark,
+  Users,
+  MessageSquare,
+  Calendar,
+  ChevronDown,
+  ChevronRight,
+  Menu,
+  X,
+} from "lucide-react";
 
 export default function DashboardLayout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // sidebar
+  const [homeOpen, setHomeOpen] = useState(true); // dropdown for Home
+  const [networksOpen, setNetworksOpen] = useState(true); // dropdown for Networks
 
   return (
     <div className="dashboard">
@@ -17,10 +29,7 @@ export default function DashboardLayout({ children }) {
 
         <div className="navbar-right">
           {/* Mobile menu button */}
-          <button
-            className="menu-btn"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <button className="notif-btn">🔔</button>
@@ -36,29 +45,52 @@ export default function DashboardLayout({ children }) {
         {/* Sidebar */}
         <aside className={`sidebar ${isOpen ? "open" : ""}`}>
           <nav>
-            <ul>
-              <li><Home size={18} /> Dashboard</li>
-              <li>
-                <Bookmark size={18} /> Bookmarks 
-                <span className="badge">3</span>
-              </li>
-              <li><Users size={18} /> Team</li>
-              <li>
-                <MessageSquare size={18} /> Messages 
-                <span className="badge gray">2</span>
-              </li>
-              <li><Calendar size={18} /> Calendar</li>
-            </ul>
-          </nav>
+            {/* HOME DROPDOWN */}
+            <div className="dropdown">
+              <div
+                className="dropdown-header"
+                onClick={() => setHomeOpen(!homeOpen)}
+              >
+                <span className="dropdown-title">
+                  <Home size={18} /> Home
+                </span>
+                {homeOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+              </div>
+              {homeOpen && (
+                <ul className="dropdown-list">
+                  <li><span>📊</span> Dashboard</li>
+                  <li>
+                    <span>🔖</span> Bookmarks
+                    <span className="badge">3</span>
+                  </li>
+                  <li><span>👥</span> Team</li>
+                  <li>
+                    <span>💬</span> Messages
+                    <span className="badge gray">2</span>
+                  </li>
+                  <li><span>📅</span> Calendar</li>
+                </ul>
+              )}
+            </div>
 
-          <div className="networks">
-            <h3>Your Networks</h3>
-            <ul>
-              <li className="purple">🟣 Front-End Developers</li>
-              <li className="yellow">🟡 Back-End Developers</li>
-              <li className="green">🟢 UI/UX Designers</li>
-            </ul>
-          </div>
+            {/* NETWORKS DROPDOWN */}
+            <div className="dropdown">
+              <div
+                className="dropdown-header"
+                onClick={() => setNetworksOpen(!networksOpen)}
+              >
+                <span className="dropdown-title">Your Networks</span>
+                {networksOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+              </div>
+              {networksOpen && (
+                <ul className="dropdown-list">
+                  <li className="purple">🟣 Front-End Developers</li>
+                  <li className="yellow">🟡 Back-End Developers</li>
+                  <li className="green">🟢 UI/UX Designers</li>
+                </ul>
+              )}
+            </div>
+          </nav>
         </aside>
 
         {/* Main Content */}
