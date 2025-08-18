@@ -1,6 +1,6 @@
 // DashboardLayout.jsx
 import { useState } from "react";
-import "./DashboardLayout.css";
+import "./layout.css";
 import {
   Home,
   Bookmark,
@@ -13,7 +13,7 @@ import {
   X,
 } from "lucide-react";
 
-export default function DashboardLayout({ children }) {
+export default function LayoutPage({ children }) {
   const [isOpen, setIsOpen] = useState(false); // sidebar
   const [homeOpen, setHomeOpen] = useState(true); // dropdown for Home
   const [networksOpen, setNetworksOpen] = useState(true); // dropdown for Networks
