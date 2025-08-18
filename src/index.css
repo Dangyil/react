@@ -170,16 +170,7 @@ button:disabled {
     height: 100vh;
     color: white;
 }
-@media screen and (max-width: 1024px){
-    body {
-        background-image: url("./assets/bg-intro-desktop.png");
-
-    }
-    #overall {
-        gap: 3rem;
-}
-}
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1024px) {
     body {
         background-image: url("./assets/bg-intro-mobile.png");
     }
