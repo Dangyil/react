@@ -16,7 +16,7 @@ body {
 #overall {
     display: flex;
     position: relative;
-    gap: 8rem;
+    gap: 6rem;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -175,7 +175,7 @@ button:disabled {
         overflow: hidden;
     }
     #overall {
-        gap: 2rem;
+        gap: 3rem;
 }
 }
 @media screen and (max-width: 990px) {
@@ -194,6 +194,7 @@ button:disabled {
     }
     #right {
         width: 90vw;
+        height: 70vh;
         align-items: center;
         justify-content: center;
     }
@@ -217,7 +218,7 @@ button:disabled {
         height: 1rem;
     }
     button {
-        width: 45vw;
+        width: 50vw;
         height: 2.7rem;
     }
     #see {
