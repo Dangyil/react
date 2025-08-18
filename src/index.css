@@ -33,13 +33,13 @@ body {
 }
 #right {
     display: flex;
-    gap: 1.5rem;
     flex-direction: column;
     position: relative;
     align-items: center;
     justify-content: center;
     width: 40vw;
     height: 100vh;
+    gap: 1.5rem;
 }
 .input-wrapper {
   position: relative;
@@ -200,7 +200,7 @@ button:disabled {
         height: 70vh;
         border: 1px solid green;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start
     }
     #myForm {
         width: 65%;
