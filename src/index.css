@@ -239,7 +239,7 @@ button:disabled {
     #right {
         width: 90vw;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 0.9rem;
     }
     #myForm {
