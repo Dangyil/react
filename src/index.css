@@ -217,7 +217,7 @@ button:disabled {
         height: 1rem;
     }
     button {
-        width: 98%;
+        width: 50vw;
         height: 2.7rem;
     }
     #see {
