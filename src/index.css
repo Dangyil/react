@@ -173,6 +173,8 @@ button:disabled {
 @media screen and (max-width: 1024px){
     body {
         overflow: hidden;
+        background-image: url("./assets/bg-intro-desktop.png");
+
     }
     #overall {
         gap: 3rem;
@@ -235,7 +237,6 @@ button:disabled {
 @media screen and (max-width: 475px) {
     body {
         background-image: url("./assets/bg-intro-mobile.png");
-        height: 100vh;
         overflow: hidden;
     }
     #overall {
@@ -249,17 +250,17 @@ button:disabled {
         justify-content: flex-start;
     }
     #right {
-        width: 100%;
+        width: 90vw;
         align-items: center;
         justify-content: center;
         gap: 0.9rem;
     }
     #myForm {
-       width: 19rem;
-       height: 23rem;
+       width: 100%;
+       height: 70%;
     }
     #purple-box {
-       width: 23rem;
+       width: 100%;
        height: 3rem;
     }
     h1 {
@@ -271,13 +272,13 @@ button:disabled {
       font-size: 0.75rem;
     }
     input {
-        width: 16rem;
+        width: 70%;
         height: 1.5rem;
         padding: 0.7rem;
     }
     button {
-        width: 17.7rem;
-        height: 2.6rem;
+        width: 70%;
+        height: 2.5rem;
         font-size: 0.75rem;
     }
     #see {
