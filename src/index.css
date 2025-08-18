@@ -185,11 +185,12 @@ button:disabled {
     #overall {
         flex-direction: column;
         background-image: url("./src/assets/bg-intro-mobile.png");
+        height: 90vh;
         gap: 1rem;
     }
     #left {
         width: 90vw;
-        height: 25vh;
+        height: 20vh;
         gap: 0;
     }
     #right {
@@ -241,8 +242,7 @@ button:disabled {
         height: 100vh;
     }
     #left {
-        width: 90%;
-        height: 7rem;
+        width: 100vw;
     }
     #right {
         width: 100%;
