@@ -175,7 +175,7 @@ button:disabled {
         overflow: hidden;
     }
     #overall {
-        gap: 1rem;
+        gap: 2rem;
 }
 }
 @media screen and (max-width: 990px) {
@@ -217,7 +217,7 @@ button:disabled {
         height: 1rem;
     }
     button {
-        width: 55vw;
+        width: 45vw;
         height: 2.7rem;
     }
     #see {
@@ -235,7 +235,7 @@ button:disabled {
     }
     #overall {
         flex-direction: column;
-        gap: 4rem;
+        gap: 0.5rem;
         width: 90vw;
         height: 100vh;
         overflow: hidden;
