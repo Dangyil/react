@@ -256,11 +256,11 @@ button:disabled {
         gap: 0.9rem;
     }
     #myForm {
-       width: 80%;
-       height: 60%;
+       width: 70%;
+       height: 55%;
     }
     #purple-box {
-       width: 100%;
+       width: 90%;
        height: 3rem;
     }
     h1 {
@@ -272,7 +272,6 @@ button:disabled {
       font-size: 0.75rem;
     }
     input {
-        width: 100%;
         height: 1.5rem;
         padding: 0.7rem;
     }
