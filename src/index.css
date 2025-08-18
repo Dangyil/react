@@ -161,15 +161,6 @@ button:disabled {
     background-color: hsl(138, 25%, 61%);
     cursor: not-allowed;
 }
-.success-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    height: 100vh;
-    color: white;
-}
 @media screen and (max-width: 1024px) {
     body {
         background-image: url("./assets/bg-intro-mobile.png");

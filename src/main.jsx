@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client'
 import ValidationForm from './App.jsx'
-import SuccessPage from './succcespage.jsx'
+import LayoutPage from './layout.jsx'
 import './index.css'
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route index element={<ValidationForm />} />
-        <Route path="/success" element={<SuccessPage />} />
+        <Route path="/layout" element={<LayoutPage />} />
       </Routes>
     </Router>
   );
