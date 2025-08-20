@@ -250,6 +250,9 @@ body {
 }
 }
 @media (max-width: 475px) {
+  .sidebar {
+    left: 0.65rem;
+  }
   .search-bar {
     width: 20vw;
   }
