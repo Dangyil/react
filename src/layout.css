@@ -58,7 +58,7 @@ body {
 }
 #search-input {
   width: 60%;
-  height: fit-content;
+  height: 1.4rem;
   padding: 0 5px;
   flex: 1;
   font-size: 0.875rem;
@@ -73,6 +73,7 @@ body {
   display: flex;
   position: relative;
   align-items: center;
+  gap: 0.5rem;
 }
 .right {
   position: absolute;
