@@ -250,6 +250,8 @@ body {
 }
 @media (max-width: 475) {
   #search-input {
-    padding: 2px;
+    height: 0.8rem;
+    padding: 0;
+    font-size: 0.75rem;
   }
 }
