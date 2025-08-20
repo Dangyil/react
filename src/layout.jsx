@@ -66,7 +66,7 @@ export default function LayoutPage({ children }) {
                   <li><span>📊</span> Dashboard</li>
                   <li>
                     <span>🔖</span> Bookmarks
-                    <span className="badge">3</span>
+                    <span className="badge">8</span>
                   </li>
                   <li><span>👥</span> Team</li>
                   <li>
