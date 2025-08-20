@@ -116,7 +116,7 @@ export default function LayoutPage({ children }) {
             />
           </div>
           <div className="right">
-          <p>Welcome back, User</p>
+          <p className="welcome-message">Welcome back, User</p>
           <img
             src="https://via.placeholder.com/32"
             alt="profile"
