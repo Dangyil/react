@@ -63,7 +63,7 @@ body {
   font-size: 0.875rem;
   color: #333;
   border: 1px solid green;
-  outline: none;
+  outline: 1px solid blue;
 }
 #search-input::placeholder {
   color: #90a4ae;
