@@ -11,6 +11,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import profilePic from "./assets/profile-pic.jpg"
 
 export default function LayoutPage({ children }) {
   const [isOpen, setIsOpen] = useState(false); // sidebar
@@ -118,7 +119,7 @@ export default function LayoutPage({ children }) {
           <div className="right">
           <p className="welcome-message">Welcome back, User</p>
           <img
-            src="./assets/profile-pic.jpg"
+            src={profilePic}
             alt="profile"
             className="profile-pic"
             />
