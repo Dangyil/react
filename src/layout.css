@@ -47,7 +47,7 @@ body {
   border: 1px solid #cfd8dc; 
   border-radius: 20px;       
   padding: 5px;
-  width: fit-content;
+  width: 25vw;
   height: 1.5rem;
   background-color: white;
 }
@@ -57,8 +57,8 @@ body {
 }
 #search-input {
   width: 60%;
-  height: 1.4rem;
-  padding: 0 3px;
+  height: fit-content;
+  padding: 0 5px;
   flex: 1;
   font-size: 0.875rem;
   color: #333;
@@ -197,9 +197,15 @@ p {
 }
 .back {
   position: relative;
-  background-color: green;
+  background-color: hsl(154, 59%, 51%);
   border-radius: 10px;
+  color: white;
+  padding: 0.5rem 1rem;
   cursor: pointer;
+}
+.back:hover {
+  background-color: hsl(154, 59%, 45%);
+  box-shadow: 0 0.3rem hsl(154, 79%, 32%);
 }
 .sidebar-footer {
   position: absolute;
