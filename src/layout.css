@@ -57,7 +57,7 @@ body {
   font-size: 0.9rem;
 }
 #search-input {
-  align-self: center;
+  position: relative;
   width: 60%;
   padding: 5px;
   font-size: 0.875rem;
