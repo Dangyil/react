@@ -46,26 +46,24 @@ body {
   align-items: center;
   border: 1px solid #cfd8dc; 
   border-radius: 20px;       
-  padding: 5px 5px;
+  padding: 5px;
   width: 15vw;
-  height: auto;
   background-color: white;
 }
 .search-icon {
   color: #90a4ae; 
-  margin: 6px;
+  margin: 3px;
   font-size: 0.875rem;
 }
 #search-input {
   border: none;
   outline: none;
   width: 15vw;
-  height: auto;
   flex: 1;
   font-size: 0.875rem;
   color: #333;
 }
-.search-input::placeholder {
+#search-input::placeholder {
   color: #90a4ae;
 }
 .notif {
@@ -236,7 +234,7 @@ p {
   margin: 5px;
   font-size: 0.9rem;
 }
-.search-input {
+#search-input {
   font-size: 0.8rem;
   color: #333;
 }
@@ -257,7 +255,7 @@ p {
   margin: 2px;
   font-size: 0.8rem;
 }
-.search-input {
+#search-input {
   font-size: 0.8rem;
 }
 }
