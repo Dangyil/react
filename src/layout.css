@@ -62,7 +62,7 @@ body {
   padding: 5px;
   font-size: 0.875rem;
   color: #333;
-  border: none;
+  border: 1px solid green;
   outline: none;
 }
 #search-input::placeholder {
