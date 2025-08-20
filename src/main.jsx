@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client'
 import ValidationForm from './App.jsx'
 import LayoutPage from './layout.jsx'
-import './index.css'
-import '/layout.css'
 
 export default function App() {
   return (
