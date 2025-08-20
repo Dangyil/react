@@ -1,12 +1,10 @@
 // DashboardLayout.jsx
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { FaSearch } from "react-icons/fa"; // icon package
+import { FaWandMagicSparkles, FaCookieBite, FaWrench } from "react-icons/fa6";
 import "./layout.css";
 import {
   Home,
-  Bookmark,
-  Users,
-  MessageSquare,
-  Calendar,
   ChevronDown,
   ChevronRight,
   Menu,
@@ -17,34 +15,35 @@ export default function LayoutPage({ children }) {
   const [isOpen, setIsOpen] = useState(false); // sidebar
   const [homeOpen, setHomeOpen] = useState(true); // dropdown for Home
   const [networksOpen, setNetworksOpen] = useState(true); // dropdown for Networks
+  const sidebarRef = useRef(null);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const toggleDropdown = (name) => {
+  setOpenDropdown(openDropdown === name ? null : name);
+};
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+   if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <div className="dashboard">
-      {/* Top Navbar */}
-      <header className="navbar">
-        <div className="navbar-left">
+      {/* Sidebar */}
+      <aside className={`sidebar ${isOpen ? "open" : ""}`} ref={sidebarRef}>
+        <nav>
           <div className="logo">Trimzales</div>
-          <span className="breadcrumbs">› Bookmarks › Favorites</span>
-        </div>
-
-        <div className="navbar-right">
-          {/* Mobile menu button */}
-          <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-          <button className="notif-btn">🔔</button>
-          <img
-            src="https://via.placeholder.com/32"
-            alt="profile"
-            className="profile-pic"
-          />
-        </div>
-      </header>
-
-      <div className="content">
-        {/* Sidebar */}
-        <aside className={`sidebar ${isOpen ? "open" : ""}`}>
-          <nav>
             {/* HOME DROPDOWN */}
             <div className="dropdown">
               <div
@@ -72,7 +71,6 @@ export default function LayoutPage({ children }) {
                 </ul>
               )}
             </div>
-
             {/* NETWORKS DROPDOWN */}
             <div className="dropdown">
               <div
@@ -84,20 +82,49 @@ export default function LayoutPage({ children }) {
               </div>
               {networksOpen && (
                 <ul className="dropdown-list">
-                  <li className="purple">🟣 Front-End Developers</li>
-                  <li className="yellow">🟡 Back-End Developers</li>
-                  <li className="green">🟢 UI/UX Designers</li>
+                  <li className="purple"> <FaWandMagicSparkles /> Front-End Developers</li>
+                  <li className="yellow"> <FaWrench /> Back-End Developers</li>
+                  <li className="green"> <FaCookieBite /> UI/UX Designers</li>
                 </ul>
               )}
             </div>
           </nav>
-        </aside>
-
+          <div className="sidebar-footer">
+            <ul className="dropdown-list">
+              <li>❓Help</li>
+              <li>⚙️Settings</li>
+            </ul>
+          </div>
+          </aside>
         {/* Main Content */}
-        <main className="main-content">
-          <div className="content-box">{children}</div>
-        </main>
-      </div>
+        <div className="main-content">
+          <div className="notif">
+          <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+          <div className="search-bar">
+          <FaSearch className="search-icon" />
+            <input
+              type="text"
+              placeholder="Search"
+              className="search-input"
+            />
+          </div>
+          <div className="right">
+          <p>Welcome back, User</p>
+          <img
+            src="https://via.placeholder.com/32"
+            alt="profile"
+            className="profile-pic"
+            />
+          </div>
+          </div>
+         <div className="content-box">{children}
+          <button className="back" onClick={window.location.href = '/'}>
+             Go Back...
+          </button>
+         </div>
+        </div>
     </div>
   );
 }
