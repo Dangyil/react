@@ -45,7 +45,6 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
   border: 1px solid #cfd8dc; 
   border-radius: 20px;       
   padding: 5px;
@@ -59,8 +58,7 @@ body {
 }
 #search-input {
   width: 60%;
-  height: 1.4rem;
-  padding: 0 5px;
+  padding: 5px;
   font-size: 0.875rem;
   color: #333;
   border: none;
