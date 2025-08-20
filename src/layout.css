@@ -48,6 +48,7 @@ body {
   border-radius: 20px;       
   padding: 5px 5px;
   width: 15vw;
+  height: auto;
   background-color: white;
 }
 .search-icon {
@@ -55,9 +56,11 @@ body {
   margin: 6px;
   font-size: 0.875rem;
 }
-.search-input {
+#search-input {
   border: none;
   outline: none;
+  width: 15vw;
+  height: auto;
   flex: 1;
   font-size: 0.875rem;
   color: #333;

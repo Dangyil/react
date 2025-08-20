@@ -112,7 +112,7 @@ export default function LayoutPage({ children }) {
             <input
               type="text"
               placeholder="Search"
-              className="search-input"
+              id="search-input"
             />
           </div>
           <div className="right">
