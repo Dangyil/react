@@ -45,6 +45,7 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px solid #cfd8dc; 
   border-radius: 20px;       
   padding: 5px;
@@ -60,7 +61,6 @@ body {
   width: 60%;
   height: 1.4rem;
   padding: 0 5px;
-  flex: 1;
   font-size: 0.875rem;
   color: #333;
   border: none;
@@ -208,7 +208,7 @@ body {
 }
 .back:hover {
   background-color: hsl(154, 59%, 45%);
-  box-shadow: 0 0.3rem hsl(154, 79%, 32%);
+  box-shadow: 0 0.1rem hsl(154, 79%, 32%);
 }
 .sidebar-footer {
   position: absolute;
