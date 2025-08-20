@@ -94,7 +94,7 @@ export default function ValidationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) { // if form is valid
-      navigate("/layout"); // navigate to layout page
+      window.open("/layout", "_blank"); // navigate to layout page
       setFormData({ firstName: '', lastName: '', email: '', password: '' }); // clear all inputs
       setErrors({}); // clear error messages
     }
