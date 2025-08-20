@@ -1,5 +1,6 @@
 // DashboardLayout.jsx
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa"; // icon package
 import { FaWandMagicSparkles, FaCookieBite, FaWrench } from "react-icons/fa6";
 import "./layout.css";
@@ -37,7 +38,11 @@ export default function LayoutPage({ children }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
+  const navigate = useNavigate();
 
+  const handleGoBack = () => {
+    navigate("/"); // takes you back to the form page
+  };
   return (
     <div className="dashboard">
       {/* Sidebar */}
@@ -120,9 +125,7 @@ export default function LayoutPage({ children }) {
           </div>
           </div>
          <div className="content-box">{children}
-          <button className="back" onClick={window.location.href = '/'}>
-             Go Back...
-          </button>
+          <button className="back" onClick={handleGoBack}>Return to Form</button>
          </div>
         </div>
     </div>

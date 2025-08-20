@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route index element={<ValidationForm />} />
+        <Route path="/" element={<ValidationForm />} />
         <Route path="/layout" element={<LayoutPage />} />
       </Routes>
     </Router>
