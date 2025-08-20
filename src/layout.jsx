@@ -1,7 +1,7 @@
 // DashboardLayout.jsx
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaSearch } from "react-icons/fa"; // icon package
+import { FaSearch } from "react-icons/fa";
 import { FaWandMagicSparkles, FaCookieBite, FaWrench } from "react-icons/fa6";
 import "./layout.css";
 import {
@@ -104,9 +104,9 @@ export default function LayoutPage({ children }) {
         {/* Main Content */}
         <div className="main-content">
           <div className="notif">
-          <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
+          <span className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          </span>
           <div className="search-bar">
           <FaSearch className="search-icon" />
             <input

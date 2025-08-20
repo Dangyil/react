@@ -142,7 +142,7 @@ export default function ValidationForm() {
         </label>
       ))}
 
-      <button
+      <button className='submit-btn'
             type="submit"
             disabled={isDisabled}
             >

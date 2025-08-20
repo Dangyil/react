@@ -141,7 +141,7 @@ input.error {
   pointer-events: none;
   z-index: 1;
 }
-button {
+.submit-btn {
     background-color: hsl(154, 59%, 51%);
     width: 26rem;
     height: 3rem;
