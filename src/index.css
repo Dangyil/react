@@ -168,10 +168,10 @@ input.error {
     #overall {
         flex-direction: column;
         height: 90vh;
-        gap: 0.8rem;
+        gap: 0.3rem;
     }
     #left {
-        width: 90vw;
+        width: 95vw;
         height: 20vh;
         gap: 0;
         justify-content: flex-end;
@@ -219,7 +219,7 @@ input.error {
     }
     #overall {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         width: 90vw;
         height: 100vh;
     }
