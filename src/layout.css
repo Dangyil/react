@@ -248,7 +248,10 @@ body {
   left: 1rem;
 }
 }
-@media (max-width: 475) {
+@media (max-width: 475px) {
+  .search-bar {
+    width: 20vw;
+  }
   #search-input {
     height: 0.7rem;
     padding: 0;
