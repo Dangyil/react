@@ -39,6 +39,7 @@ export default function LayoutPage({ children }) {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
+
   const navigate = useNavigate();
 
   const handleGoBack = () => {
@@ -81,8 +82,7 @@ export default function LayoutPage({ children }) {
             <div className="dropdown">
               <div
                 className="dropdown-header"
-                onClick={() => setNetworksOpen(!networksOpen)}
-              >
+                onClick={() => setNetworksOpen(!networksOpen)}>
                 <span className="dropdown-title">Your Networks</span>
                 {networksOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
               </div>
